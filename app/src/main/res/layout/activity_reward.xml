@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:padding="0dp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/ThemeOverlay.AppCompat.Dark"
+            app:title="奖励界面"
+            app:titleTextColor="@color/white"/>
+    <TextView
+            android:id="@+id/rewardView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:alpha="1"
+            android:textSize="30sp"
+            android:layout_above = "@id/tv_title"
+            android:layout_gravity="center"
+            android:paddingTop="140dp"
+            android:paddingBottom="120dp"
+            android:visibility="visible"/>
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="专注完成，做得很好！"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="现在，你可以休息一下，然后再次挑战自己。"
+            android:layout_gravity="center_horizontal"
+            android:padding="16dp"
+            android:textSize="16sp" />
+    <Button
+            android:id="@+id/reward_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击查看奖励"
+            android:layout_gravity="center_horizontal" />
+
+</LinearLayout>
